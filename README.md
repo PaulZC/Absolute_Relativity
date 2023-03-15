@@ -32,7 +32,7 @@ if __name__ == '__main__':
     Level_2()
 ```
 
-## Test - with empty __init__.py files
+## Test - with empty \_\_init\_\_.py files
 
 ### Level_3
 
