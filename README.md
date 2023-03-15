@@ -15,6 +15,21 @@ This post helped too:
 
 To create nested packages with modules that can all be run individually as __main__.
 
+```
+.
+└── Empty_init/
+    ├── testMe.py
+    └── Level_1/
+        ├── __init__.py
+        ├── I_Am_Level_1.py
+        └── Level_2/
+            ├── __init__.py
+            ├── I_Am_Level_2.py
+            └── Level_3/
+                ├── __init__.py
+                └── I_Am_Level_3.py
+```
+
 Simple right? Well, kind of. It took me a long time to figure out that you need to import the sub-packages differently
 depending on whether you are running as __main__ or as an imported module. E.g.:
 
