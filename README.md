@@ -47,7 +47,7 @@ if __name__ == '__main__':
     Level_2()
 ```
 
-## Test - with empty \_\_init\_\_.py files
+## Empty \_\_init\_\_.py files
 
 ### Level_3
 
@@ -58,7 +58,7 @@ python I_Am_Level_3.py
 
 produces:
 
-**I am Level 3**
+* **I am Level 3**
 
 ### Level_2
 
@@ -122,7 +122,7 @@ def runTest():
 runTest()
 ```
 
-## Test - with populated \_\_init\_\_.py files
+## Populated \_\_init\_\_.py files
 
 For more absolute relative fun, check out the ```With_init``` folder:
 
@@ -182,4 +182,5 @@ Try the ```No_I_Am``` folder for more absolute relative headache-inducing fun!
 ```
 
 Enjoy!
+
 Paul
