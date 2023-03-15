@@ -106,4 +106,59 @@ produces:
 * **I am Level 3**
 * **I am Level 3**
 
+```testMe.py``` is:
+
+```
+from Level_1 import I_Am_Level_1
+from Level_1.Level_2 import I_Am_Level_2
+from Level_1.Level_2.Level_3 import I_Am_Level_3
+
+def runTest():
+    print("I Am Main")
+    I_Am_Level_1.Level_1()
+    I_Am_Level_2.Level_2()
+    I_Am_Level_3.Level_3()
+
+runTest()
+```
+
+## Test - with populated \_\_init\_\_.py files
+
+For more absolute relative fun, check out the ```With_init``` folder:
+
+```
+.
+└── With_init/
+    ├── testMe.py
+    └── Level_1/
+        ├── __init__.py
+        ├── I_Am_Level_1.py
+        └── Level_2/
+            ├── __init__.py
+            ├── I_Am_Level_2.py
+            └── Level_3/
+                ├── __init__.py
+                └── I_Am_Level_3.py
+```
+
+E.g. ```__init__.py``` in ```Level_2``` can be:
+
+```
+from .I_Am_Level_2 import Level_2
+```
+
+```testMe.py``` can be simplified to:
+
+```
+import Level_1
+
+def runTest():
+    print("I Am Main")
+    Level_1.I_Am_Level_1.Level_1()
+    Level_1.Level_2.I_Am_Level_2.Level_2()
+    Level_1.Level_2.Level_3.I_Am_Level_3.Level_3()
+
+runTest()
+```
+
 
