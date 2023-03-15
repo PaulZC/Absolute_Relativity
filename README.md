@@ -161,4 +161,25 @@ def runTest():
 runTest()
 ```
 
+## No I\_Am\_
 
+Do we need those helpful **I\_Am\_**'s in the module names? No, not really.
+Try the ```No_I_Am``` folder for more absolute relative headache-inducing fun!
+
+```
+.
+└── No_I_Am/
+    ├── testMe.py
+    └── Level_1/
+        ├── __init__.py
+        ├── Level_1.py
+        └── Level_2/
+            ├── __init__.py
+            ├── Level_2.py
+            └── Level_3/
+                ├── __init__.py
+                └── Level_3.py
+```
+
+Enjoy!
+Paul
