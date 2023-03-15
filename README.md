@@ -3,15 +3,15 @@
 It took me a _long_ time to figure out where I was going wrong with relative and absolute imports in Python3.
 I'm sharing this to hopefully save you some time if you're attempting to do the same thing.
 
-### Thanks!
+## Thanks!
 
 [This post by BrenBarn](https://stackoverflow.com/a/14132912) really helped me figure out what was going on...
 
-[This post](https://iq-inc.com/importerror-attempted-relative-import/) helped too...
+This post helped too:
 
 [![No Idea](img/AndyRelativeImports.jpg)](https://iq-inc.com/importerror-attempted-relative-import/)
 
-### Objective
+## Objective
 
 To create nested packages with modules that can all be run individually as __main__.
 
@@ -32,7 +32,9 @@ if __name__ == '__main__':
     Level_2()
 ```
 
-### Test - with empty __init__.py files
+## Test - with empty __init__.py files
+
+### Level_3
 
 ```
 cd Empty_init\Level_1\Level_2\Level_3
@@ -43,6 +45,8 @@ produces:
 
 **I am Level 3**
 
+### Level_2
+
 ```
 cd ..
 python I_Am_Level_2.py
@@ -52,6 +56,8 @@ produces:
 
 * **I am Level 2**
 * **I am Level 3**
+
+### Level_1
 
 ```
 cd ..
@@ -66,6 +72,8 @@ produces:
 * **I am Level 3**
 
 Note that **I am Level 3** appears twice - because it is printed by both ```Level_2()``` and ```Level_3()```
+
+### main
 
 ```
 cd ..
