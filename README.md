@@ -181,6 +181,20 @@ Try the ```No_I_Am``` folder for more absolute relative headache-inducing fun!
                 └── Level_3.py
 ```
 
+```testMe.py``` can be simplified to:
+
+```
+import Level_1
+
+def runTest():
+    print("I Am Main")
+    Level_1.Level_1()
+    Level_1.Level_2.Level_2()
+    Level_1.Level_2.Level_3.Level_3()
+
+runTest()
+```
+
 Enjoy!
 
 Paul
